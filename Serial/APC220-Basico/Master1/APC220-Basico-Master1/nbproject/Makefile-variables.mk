@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Arduino-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Arduino-Windows
-CND_ARTIFACT_NAME_Debug=blink
-CND_ARTIFACT_PATH_Debug=dist/Debug/Arduino-Windows/blink
+CND_ARTIFACT_NAME_Debug=apc220-basico-master1
+CND_ARTIFACT_PATH_Debug=dist/Debug/Arduino-Windows/apc220-basico-master1
 CND_PACKAGE_DIR_Debug=dist/Debug/Arduino-Windows/package
-CND_PACKAGE_NAME_Debug=blink.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Arduino-Windows/package/blink.tar
+CND_PACKAGE_NAME_Debug=apc220-basico-master1.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Arduino-Windows/package/apc220-basico-master1.tar
 # Release configuration
 CND_PLATFORM_Release=Arduino-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Arduino-Windows
-CND_ARTIFACT_NAME_Release=blink
-CND_ARTIFACT_PATH_Release=dist/Release/Arduino-Windows/blink
+CND_ARTIFACT_NAME_Release=apc220-basico-master1
+CND_ARTIFACT_PATH_Release=dist/Release/Arduino-Windows/apc220-basico-master1
 CND_PACKAGE_DIR_Release=dist/Release/Arduino-Windows/package
-CND_PACKAGE_NAME_Release=blink.tar
-CND_PACKAGE_PATH_Release=dist/Release/Arduino-Windows/package/blink.tar
+CND_PACKAGE_NAME_Release=apc220-basico-master1.tar
+CND_PACKAGE_PATH_Release=dist/Release/Arduino-Windows/package/apc220-basico-master1.tar
 #
 # include compiler specific variables
 #

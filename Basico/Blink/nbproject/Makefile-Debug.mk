@@ -56,11 +56,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink3.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink3.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	avr-gcc.exe -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink3 ${OBJECTFILES} ${LDLIBSOPTIONS} ${FLAGS_LINKER}
+	avr-gcc.exe -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink ${OBJECTFILES} ${LDLIBSOPTIONS} ${FLAGS_LINKER}
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -73,7 +73,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink3.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/blink.exe
 
 # Subprojects
 .clean-subprojects:
