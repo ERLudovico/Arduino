@@ -56,11 +56,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-master.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-slave.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-master.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-slave.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	avr-gcc.exe -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-master ${OBJECTFILES} ${LDLIBSOPTIONS} ${FLAGS_LINKER}
+	avr-gcc.exe -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-slave ${OBJECTFILES} ${LDLIBSOPTIONS} ${FLAGS_LINKER}
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -73,7 +73,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-master.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/apc220-basico-slave.exe
 
 # Subprojects
 .clean-subprojects:

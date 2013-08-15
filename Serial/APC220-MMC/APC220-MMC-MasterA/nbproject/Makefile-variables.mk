@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Arduino-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Arduino-Windows
-CND_ARTIFACT_NAME_Debug=apc220-basico-slave
-CND_ARTIFACT_PATH_Debug=dist/Debug/Arduino-Windows/apc220-basico-slave
+CND_ARTIFACT_NAME_Debug=apc220-mmc-mastera
+CND_ARTIFACT_PATH_Debug=dist/Debug/Arduino-Windows/apc220-mmc-mastera
 CND_PACKAGE_DIR_Debug=dist/Debug/Arduino-Windows/package
-CND_PACKAGE_NAME_Debug=apc220-basico-slave.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Arduino-Windows/package/apc220-basico-slave.tar
+CND_PACKAGE_NAME_Debug=apc220-mmc-mastera.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Arduino-Windows/package/apc220-mmc-mastera.tar
 # Release configuration
 CND_PLATFORM_Release=Arduino-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Arduino-Windows
-CND_ARTIFACT_NAME_Release=apc220-basico-slave
-CND_ARTIFACT_PATH_Release=dist/Release/Arduino-Windows/apc220-basico-slave
+CND_ARTIFACT_NAME_Release=apc220-mmc-mastera
+CND_ARTIFACT_PATH_Release=dist/Release/Arduino-Windows/apc220-mmc-mastera
 CND_PACKAGE_DIR_Release=dist/Release/Arduino-Windows/package
-CND_PACKAGE_NAME_Release=apc220-basico-slave.tar
-CND_PACKAGE_PATH_Release=dist/Release/Arduino-Windows/package/apc220-basico-slave.tar
+CND_PACKAGE_NAME_Release=apc220-mmc-mastera.tar
+CND_PACKAGE_PATH_Release=dist/Release/Arduino-Windows/package/apc220-mmc-mastera.tar
 #
 # include compiler specific variables
 #
