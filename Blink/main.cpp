@@ -1,4 +1,3 @@
-//#define __AVR_ATmega328P__
 #include <Arduino.h>
 
 extern HardwareSerial Serial;

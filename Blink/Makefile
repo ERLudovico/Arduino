@@ -4,13 +4,14 @@
 # Uncomment the declarations of the libraries that you want to use.
 # Based on: http://playground.arduino.cc/Code/Netbeans
 
-COM_PORT = COM11
-ARDUINO_VERSION = 102
-ARDUINO_BASE_DIR = c:/Dados/Programacao/Arduino/IDE/arduino-1.0.2
+# Mini
+COM_PORT = COM8
+ARDUINO_VERSION = 105
+ARDUINO_BASE_DIR = "D:\DADOS EXT\Aplicativos\Arduino\arduino-1.0.5"
 ARDUINO_CORE_DIR = ${ARDUINO_BASE_DIR}/hardware/arduino/cores/arduino
 ARDUINO_LIB_DIR = ${ARDUINO_BASE_DIR}/libraries
 
-# Arduino Uno:
+# Arduino Uno/NANO/Mini:
 ARDUINO_MODEL = atmega328p
 ARDUINO_PROGRAMMER = arduino
 ARDUINO_PINS_DIR = ${ARDUINO_BASE_DIR}/hardware/arduino/variants/standard
@@ -43,7 +44,7 @@ INCLUDE = -c -g \
 -I${ARDUINO_LIB_DIR}/WiFi/utility \
 -I${ARDUINO_LIB_DIR}/Wire \
 -I${ARDUINO_LIB_DIR}/Wire/utility \
--I${ARDUINO_LIB_DIR}/PString \
+
 
 FLAGS_GCC = -c -g -Os -Wall -ffunction-sections -fdata-sections -mmcu=${ARDUINO_MODEL} -DF_CPU=16000000L -MMD -DUSB_VID=null -DUSB_PID=null -DARDUINO=${ARDUINO_VERSION}
 FLAGS_GPP = ${FLAGS_GCC} -fno-exceptions
@@ -100,10 +101,7 @@ build: .build-post
 	${CMD_AVR_AR} lib/Tone.cpp.o 
 	${CMD_AVR_AR} lib/USBCore.cpp.o 
 	${CMD_AVR_AR} lib/WMath.cpp.o 
-	${CMD_AVR_AR} lib/WString.cpp.o 
-	${CMD_AVR_GPP} ${ARDUINO_LIB_DIR}/PString/PString.cpp -o lib/PString.cpp.o
-	${CMD_AVR_AR} lib/PString.cpp.o 
-	
+	${CMD_AVR_AR} lib/WString.cpp.o 	
 
 # SPI:
 #	${CMD_AVR_GPP} ${ARDUINO_LIB_DIR}/SPI/SPI.cpp -o lib/SPI.cpp.o 
@@ -183,8 +181,10 @@ build: .build-post
 
 #upload: .build-post
 upload: 
-	avrdude -C ${ARDUINO_BASE_DIR}/hardware/tools/avr/etc/avrdude.conf -v -p${ARDUINO_MODEL} -c${ARDUINO_PROGRAMMER} -P ${COM_PORT} -b115200 -D -Uflash:w:${CND_ARTIFACT_PATH_${CONF}}.hex:i
-
+	# UNO
+	# avrdude -C ${ARDUINO_BASE_DIR}/hardware/tools/avr/etc/avrdude.conf -v -p${ARDUINO_MODEL} -c${ARDUINO_PROGRAMMER} -P ${COM_PORT} -b115200 -D -Uflash:w:${CND_ARTIFACT_PATH_${CONF}}.hex:i
+	# Arduino Mini v3.0
+	avrdude -C ${ARDUINO_BASE_DIR}/hardware/tools/avr/etc/avrdude.conf -v -v -v -v -p${ARDUINO_MODEL} -c${ARDUINO_PROGRAMMER} -P ${COM_PORT} -b57600 -D -Uflash:w:${CND_ARTIFACT_PATH_${CONF}}.hex:i
 
 # clean
 clean: .clean-post
